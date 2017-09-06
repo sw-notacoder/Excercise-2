@@ -1,3 +1,13 @@
+#Part 1
+
+setwd("/Users/swastik/Desktop/AMMA 2017/Data/data_2017")
+infant_fle <- read.csv("/Users/swastik/Desktop/AMMA 2017/Data/data_2017/infant_mortaity.csv")
+inf_mort_df<- data.frame(infant_fle)
+View(inf_mort_df)
+inf_mort_df_mod<- inf_mort_df[1:7]
+View(inf_mort_df_mod)
+#Part 1
+
 req_file <- read_html("https://en.wikipedia.org/wiki/India–Pakistan_cricket_rivalry")
 View(req_file)
 tables<-html_nodes(req_file, "table")
