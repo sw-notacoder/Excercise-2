@@ -12,14 +12,4 @@ for(i in 1:nrow(table2))
 }
 
 print(counter)
-#For downloading data and then performing
-csvfle <- read.csv("/Users/swastik/Desktop/AMMA 2017/Code/Code_2017/Ind_Pak_rivalry.csv")
-View(csvfle)
-counter<- 0
-match_df<- data.frame(csvfle)
-View(match_df)
-for(i in 1:nrow(match_df))
-{
-  counter<- counter + match_df$IND[i]
-}
-print(counter)
+
